@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10sp"
+    android:background="@drawable/bg_color"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:gravity="center"
+        android:text="Guardar Producto"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt_codigo"
+        android:textColorHint="#FFFFFF"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Codigo"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edt_Descr"
+        android:layout_width="match_parent"
+        android:textColorHint="#FFFFFF"
+
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Descripcion"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edt_prec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#FFFFFF"
+
+        android:ems="10"
+        android:hint="Precio"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edt_Categoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColorHint="#FFFFFF"
+
+        android:hint="Categoria"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btn_guardar"
+        android:layout_width="match_parent"
+        android:typeface="sans"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_color"
+        android:text="Guardar" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="20dp"
+        android:indeterminate="false"
+        android:max="40"
+        android:minWidth="200dp"
+        android:minHeight="50dp"
+        android:progress="1"
+        android:visibility="invisible" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bntabajo_agregar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Agregar"
+            android:textColorHint="#ffffff"
+            android:layout_weight="1"
+            android:background="@drawable/btn_color" />
+
+        <Button
+            android:id="@+id/bntabajo_listar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_color"
+            android:hint="Listar"
+            android:textColorHint="#ffffff" />
+
+        <Button
+            android:id="@+id/bntabajo_eliminar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_color"
+            android:hint="Eliminar"
+            android:textColorHint="#ffffff" />
+
+        <Button
+            android:id="@+id/bntabajo_actualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_color"
+            android:hint="Actualizar"
+            android:textColorHint="#ffffff" />
+    </LinearLayout>
+
+
+</LinearLayout>
